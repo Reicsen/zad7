@@ -1,9 +1,19 @@
 package com.zad7;
 
+import java.math.BigDecimal;
+import java.math.RoundingMode;
+
 public class PostacZwykla
 {
     public double czrzeczywista;
     public double czurojona;
+
+    public static double zaokraglanie(double liczba)
+    {
+        BigDecimal pomocniczy = BigDecimal.valueOf(liczba);
+        pomocniczy = pomocniczy.setScale(3, RoundingMode.HALF_UP);
+        return pomocniczy.doubleValue();
+    }
 
     public PostacZwykla()
     {
@@ -34,7 +44,7 @@ public class PostacZwykla
             {
                 if (z.czurojona>0.0)
                 {
-                    return Double.toString(z.czrzeczywista)+"+"+Double.toString(z.czurojona)+"i";
+                    return (Double.toString(z.czrzeczywista))+"+"+Double.toString(z.czurojona)+"i";
                 }
                 else
                 {
@@ -46,7 +56,7 @@ public class PostacZwykla
 
     public PostacZwykla(PostacTrygonometryczna z)
     {
-        this.czrzeczywista = z.modul * Math.cos(z.argument);
-        this.czurojona = z.modul * Math.sin(z.argument);
+        this.czrzeczywista = zaokraglanie(z.modul * Math.cos(z.argument));
+        this.czurojona = zaokraglanie(z.modul * Math.sin(z.argument));
     }
 }
