@@ -1,5 +1,5 @@
-<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><help_text>Space for diagram notes</help_text><element><id>Relation</id><coordinates><x>70</x><y>60</y><w>110</w><h>150</h></coordinates><panel_attributes></panel_attributes><additional_attributes>10;130;90;10</additional_attributes></element><element><id>UMLUseCase</id><coordinates><x>160</x><y>0</y><w>280</w><h>150</h></coordinates><panel_attributes>Obliczanie naturalnej potęgi liczby zespolonej</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLActor</id><coordinates><x>10</x><y>170</y><w>80</w><h>110</h></coordinates><panel_attributes>Użytkownik</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>20</x><y>430</y><w>150</w><h>510</h></coordinates><panel_attributes>--
-UC01
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><help_text>Space for diagram notes</help_text><element><id>Relation</id><coordinates><x>60</x><y>60</y><w>110</w><h>150</h></coordinates><panel_attributes></panel_attributes><additional_attributes>10;130;90;10</additional_attributes></element><element><id>UMLUseCase</id><coordinates><x>150</x><y>0</y><w>280</w><h>150</h></coordinates><panel_attributes>Obliczanie naturalnej potęgi liczby zespolonej</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLActor</id><coordinates><x>0</x><y>170</y><w>80</w><h>110</h></coordinates><panel_attributes>Użytkownik</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>10</x><y>430</y><w>150</w><h>510</h></coordinates><panel_attributes>--
+PU01
 --
 Aktorzy
 --
@@ -28,7 +28,7 @@ Warunki końcowe
 
 
 --
-Wyjątki</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>170</x><y>430</y><w>300</w><h>510</h></coordinates><panel_attributes>--
+Wyjątki</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>160</x><y>430</y><w>300</w><h>510</h></coordinates><panel_attributes>--
 Obliczanie naturalnej potęgi liczby zespolonej
 --
 Użytkownik
@@ -64,15 +64,47 @@ III Podczas obliczeń przekroczono zakres double
  (przjście z kroku 4.) - przejście do przepływu II
 -obliczenia przekraczają w którymś momencie
  zakres typu double (przejście z kroku 4.) -przejście
- do przepływu III</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>70</x><y>190</y><w>170</w><h>60</h></coordinates><panel_attributes></panel_attributes><additional_attributes>10;10;150;35</additional_attributes></element><element><id>UMLUseCase</id><coordinates><x>220</x><y>200</y><w>220</w><h>80</h></coordinates><panel_attributes>Czyszczenie danych na ekranie</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>20</x><y>400</y><w>450</w><h>30</h></coordinates><panel_attributes>Diagram określonego przypadku użycia</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>610</x><y>160</y><w>100</w><h>90</h></coordinates><panel_attributes>--
+ do przepływu III</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>60</x><y>190</y><w>170</w><h>60</h></coordinates><panel_attributes></panel_attributes><additional_attributes>10;10;150;35</additional_attributes></element><element><id>UMLUseCase</id><coordinates><x>210</x><y>200</y><w>220</w><h>80</h></coordinates><panel_attributes>Czyszczenie danych na ekranie</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>600</x><y>160</y><w>100</w><h>90</h></coordinates><panel_attributes>--
 Package:
 --
 Klasa główna:
 --
-Pozostałe klasy:</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>710</x><y>160</y><w>160</w><h>90</h></coordinates><panel_attributes>--
+Pozostałe klasy:</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>700</x><y>160</y><w>160</w><h>90</h></coordinates><panel_attributes>--
 zad7
 --
 PotegowanieZespolone
 --
 -PostacZwykla
--PostacTrygonometryczna</panel_attributes><additional_attributes></additional_attributes></element></diagram>
+-PostacTrygonometryczna</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>630</x><y>430</y><w>300</w><h>200</h></coordinates><panel_attributes>--
+Czyszczenie danych na ekranie
+--
+Użytkownik
+--
+-komputer ma podłączoną mysz lub inne
+ urządzenie I/O do obsługi kursora
+--
+1. Aktor naciska przycisk ,,Wyczyść"
+2. System czyści wszelkie dane znajdujące
+    się w polach tekstowych lub polu wyniku
+--
+[brak]
+--
+-wszystkie pola tekstowe oraz pole wyniku są puste
+--
+[brak]</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>480</x><y>430</y><w>150</w><h>200</h></coordinates><panel_attributes>--
+PU02
+--
+Aktorzy
+--
+Warunki wstępne
+
+--
+Przepływ główny
+
+
+--
+Przepływy alternatywne
+--
+Warunki końcowe
+--
+Wyjątki</panel_attributes><additional_attributes></additional_attributes></element></diagram>
