@@ -30,8 +30,9 @@ public class PotegowanieZespolone extends Application
         polecenie1.setWrapText(true);
         polecenie1.setMaxWidth(Double.POSITIVE_INFINITY);
         TextArea podajczrzeczywista = new TextArea();
-        podajczrzeczywista.setFont(Font.font("Callibri", 30));
+        podajczrzeczywista.setFont(Font.font("Callibri", 50));
         podajczrzeczywista.setWrapText(true);
+        podajczrzeczywista.setPrefRowCount(2);
         Label polecenie2 = new Label("Podaj część urojoną liczby zespolonej");
         polecenie2.setAlignment(Pos.CENTER);
         polecenie2.setFont(Font.font("Callibri", FontWeight.BOLD, 25));
@@ -39,8 +40,9 @@ public class PotegowanieZespolone extends Application
         polecenie2.setWrapText(true);
         polecenie2.setMaxWidth(Double.POSITIVE_INFINITY);
         TextArea podajczurojona = new TextArea();
-        podajczurojona.setFont(Font.font("Callibri", 30));
+        podajczurojona.setFont(Font.font("Callibri", 50));
         podajczurojona.setWrapText(true);
+        podajczurojona.setPrefRowCount(2);
         Label polecenie3 = new Label("Podaj potęgę");
         polecenie3.setAlignment(Pos.CENTER);
         polecenie3.setFont(Font.font("Callibri", FontWeight.BOLD, 25));
@@ -48,15 +50,16 @@ public class PotegowanieZespolone extends Application
         polecenie3.setWrapText(true);
         polecenie3.setMaxWidth(Double.POSITIVE_INFINITY);
         TextArea podajpotege = new TextArea();
-        podajpotege.setFont(Font.font("Callibri", 15));
+        podajpotege.setFont(Font.font("Callibri", 50));
         podajpotege.setWrapText(true);
+        podajpotege.setPrefRowCount(2);
         Button uruchom = new Button("Oblicz");
         uruchom.setFont(Font.font("Arial", FontWeight.BOLD, 30));
         uruchom.setMaxWidth(500);
         uruchom.setMinWidth(500);
         uruchom.setAlignment(Pos.CENTER);
         Label wynik = new Label();
-        wynik.setFont(Font.font("Callibri", 40));
+        wynik.setFont(Font.font("Callibri", 60));
         wynik.setMaxWidth(Double.POSITIVE_INFINITY);
         polecenie2.setAlignment(Pos.CENTER);
         polecenie2.setBackground(new Background(new BackgroundFill(Color.ALICEBLUE, null, null)));
@@ -67,6 +70,7 @@ public class PotegowanieZespolone extends Application
         wyczysc.setMinWidth(500);
         wyczysc.setAlignment(Pos.CENTER);
         VBox siatka = new VBox(polecenie1, podajczrzeczywista, polecenie2, podajczurojona, polecenie3, podajpotege, uruchom, wynik, wyczysc);
+        siatka.setAlignment(Pos.TOP_CENTER);
         baza.setTitle("Zadanie 7.");
         siatka.setPrefWidth(Screen.getPrimary().getVisualBounds().getWidth());
         siatka.setPrefHeight(Screen.getPrimary().getVisualBounds().getHeight());
